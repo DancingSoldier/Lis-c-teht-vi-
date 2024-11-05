@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "int vie " << sizeof(int) << " tavua." << endl;
+    cout << "unsigned int vie " << sizeof(unsigned int) << " tavua." << endl;
+    cout << "float vie " << sizeof(float) << " tavua." << endl;
+    cout << "double vie " << sizeof(double) << " tavua." << endl;
+    cout << "char vie " << sizeof(char) << " tavua." << endl;
+    cout << "bool vie " << sizeof(bool) << " tavua." << endl;
+
+    return 0;
