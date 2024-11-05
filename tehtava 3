@@ -1,0 +1,18 @@
+tehtava3
+
+int x = 15;   x = 15
+int *y;       y on osoitin
+y = &x;       y = x
+*y = *y + 3;  y = x:ään, joten *y = x -> x = x + 3 = 18
+int z = 2;    z = 2
+int *w;       w on osoitin
+w = y;        w = y = x
+y = 0;        y = 0
+y = &z;       y alkaa osoittaa z:ään
+*w = *w + *y; x = x + z = 18 + 2 = 20
+int t[] = { 9, 10 };  taulukko t, jossa t[0] = 9 ja t[1] = 10
+y = t;                y osoittaa taulukon t ensimmäiseen alkioon, eli t[0]
+*w += *y;             w = x, joten x = x + t[0] = 20 + 9 = 29
+y++;                  y kasvaa ja alkaa osoittaa taulukon t toiseen alkioon, eli t[1]
+*w += *y;             w osoittaa x:ään ja y osoittaa t[1], joten x = x + t[1] = 29 + 10 = 39
+
