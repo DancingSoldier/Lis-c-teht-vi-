@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+// A) Funktio, joka käyttää osoittimia
+void summaa_osoittimina(int* a, int* b, int* summa) {
+    *summa = *a + *b;  // Muutetaan summa-osoittimen osoittamaa arvoa
+}
+
+// B) Funktio, joka käyttää referenssejä
+void summaa_referensseinä(int& a, int& b, int& summa) {
+    summa = a + b;  // Suoraan muutetaan summa-muuttujaa
+}
+
+int main() {
+    int x = 5, y = 7, summa_osoittimella, summa_referenssilla;
+
+    // A) Osoittimilla
+    summaa_osoittimina(&x, &y, &summa_osoittimella);
+    cout << "Summa osoittimilla: " << summa_osoittimella << endl;
+
+    // B) Referensseillä
+    summaa_referensseinä(x, y, summa_referenssilla);
+    cout << "Summa referensseillä: " << summa_referenssilla << endl;
+
+    return 0;
+}
