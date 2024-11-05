@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    int x = 10;       // Kokonaislukumuuttuja
+    int* y = &x;      // Osoitin, joka osoittaa x:ään
+
+    
+    cout << "x:n muistiosoite: " << &x << endl;
+    cout << "y:n muistiosoite: " << &y << endl;
+
+    // Tulostetaan molempien muuttujien arvot
+    cout << "x:n arvo: " << x << endl;
+    cout << "y:n arvo (osoittaa x:n arvoa): " << *y << endl;
+
+    return 0;
+}
